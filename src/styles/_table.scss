@@ -1,0 +1,34 @@
+table {
+    width: 100%;
+    margin: 0 auto;
+    background-color: $white;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    border-collapse: collapse; 
+
+    th {
+        padding: 12px;
+        font-size: 22px;
+    }
+
+    tr {
+        border-top: 2px solid $primary;
+
+        td {
+            padding: 15px;
+            font-size: 18px;
+        }
+    }
+
+    tr:hover {
+        cursor: pointer;
+        background-color: $primary;
+        color: $white;
+    }
+
+    .selected-row {
+        background-color: $primary;
+        color: $white;
+    }
+}

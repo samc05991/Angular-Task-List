@@ -1,0 +1,35 @@
+.btn {
+    border: 0px;
+    padding: 6px 12px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: $primary;
+    color: white;
+    border-radius: 6px;
+    margin: 10px;
+}
+
+.btn[disabled] {
+    cursor: not-allowed;
+}
+
+.btn--secondary {
+    border: 1px solid $primary;
+    color: $primary;
+    background-color: $white;
+}
+
+.btn--danger {
+    border: 1px solid $white;
+    color: $white;
+    background-color: $danger;
+}
+
+.btn--danger:hover {
+    color: $yellow;
+}
+
+.btn--primary:hover {
+    background-color: $primary-dark;
+    color: $yellow;
+}

@@ -1,0 +1,26 @@
+.modal {
+    background-color: $white;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px;
+    width: 400px;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: 10;
+
+    .modal-controls {
+        text-align: center;
+    }
+}
+
+.backdrop {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(128, 128, 128, 0.541);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}

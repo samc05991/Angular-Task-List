@@ -1,0 +1,18 @@
+@import "./styles/vars.scss";
+@import "./styles/table.scss";
+@import "./styles/modal.scss";
+@import "./styles/button.scss";
+@import "./styles/utils.scss";
+@import "./styles/inputs.scss";
+
+body {
+    margin: 0px;
+    background-color: $grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    box-sizing: border-box;
+}

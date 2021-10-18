@@ -1,0 +1,21 @@
+<div class="backdrop" (click)="closeModal()"></div>
+<div class="modal">
+    <h2> Add a new task </h2>
+    <div class="modal-form">
+        <form #taskForm="ngForm">
+            <label class="label" for="alterEgo">Label</label>
+            <input autocomplete="off" class="input" type="text" [(ngModel)]="newTask.label" id="label" name="label" required/>
+
+            <label class="label" for="alterEgo">Description</label>
+            <input autocomplete="off" class="input" type="text" [(ngModel)]="newTask.description" id="description" name="description" required/>
+
+            <label class="label" for="alterEgo">Category</label>
+            <input autocomplete="off" class="input" type="text" [(ngModel)]="newTask.category" id="category" name="category" required/>
+        </form>
+    </div>
+
+    <div class="modal-controls">
+        <button type="button" class="btn btn--primary" (click)="saveTask()" [disabled]="!taskForm.form.valid">Save</button>
+        <button type="button" class="btn btn--secondary" (click)="closeModal()">Cancel</button>
+    </div>
+</div>

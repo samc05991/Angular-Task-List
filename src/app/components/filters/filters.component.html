@@ -1,0 +1,7 @@
+<div class="filters">
+    <label class="filter" *ngFor="let filter of filters">
+        <input type="checkbox" [(ngModel)]="selectedFilters[filter]" value="filter"/>
+        <span class="checkmark"></span>
+        {{filter}}
+    </label>
+</div>
